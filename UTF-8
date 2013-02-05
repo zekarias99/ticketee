@@ -1,0 +1,100 @@
+"A%sB%s" % "1234"
+Symbol.instance
+Symbol.instance_methods
+puts "hello"
+puts "hello".upcase
+puts "hello".reverse
+puts "hello".legth
+puts "hello".to_s
+puts "hello".to_s.count
+puts "hello".to_s.size
+puts "hello".size
+puts "hello".length
+puts "hello".count
+count.method
+perchase.all
+first_pe = Perchase.new
+first_pe.find_by_name
+first_pe.find_by_name(foo)
+first_pe.find_by_id(1)
+Perchase.first
+Perchase.last
+Perchase.cost
+first_perchase = Perchase.first
+first_perchase.cost
+first_perchase.find(param[1])
+first_perchase.find(param[:id])
+first_perchase.name
+first_perchase.id
+Param.class
+puts param.class
+puts Param.class
+first_perchase.find(params[:id])
+first_perchase.find(params[2])
+params.methode
+  Perchase.find_all_by_cost(params[:cost])
+first_perchase.find_all_by_cost(params[:cost])
+first_perchase.find_all_by_name(params[:name])
+first_perchase.find_all_by_name(params[:name, :cost])
+first_perchase.find(params[:name, :cost])
+first_perchase.find(params[ :cost])
+first_perchase.find(params[ :id])
+z = Perchase.find([1, 2])
+z.name
+z.(name)
+z.(name)client = Perchase.find_by_first_cost(1.0)
+client = Perchase.find_by_first_cost(1.0)
+client = Perchase.find_by_cost(1.0)
+client.id
+client.created_at
+client.updated_at
+client = Perchase.find_by_name("foo")
+Perchase.find_all
+Perchase.all
+SELECT "perchases".* FROM "perchases" 
+z = 9a641592611dcd56fe51ca8b91c875169c698229
+z = "9a641592611dcd56fe51ca8b91c875169c698229"
+z.size
+quit
+z.count
+z = "2da2a59abf621654dfd6344228e3b1ba14b882a4"
+z
+z.count.to_s
+z.to_s
+z.to_s.count
+require 'hibe'
+load 'hirb'
+user = Users
+user = Users.all
+Users.all
+requir 'hirb'
+require 'hirb'
+User.all
+first_user = User.first
+Project.create! (:name => "TextMate 2")
+Project.create!(:name => "TextMate 2")
+@project = Project.new(params[:project]) \
+@project.save
+q
+Project.craete
+Project.create()
+Project.create()!
+rails c
+reload!
+@project = Project.new([params][:project])
+@project = Project.new(psrams[:project])
+@project = Project.new(params[:project])
+clear
+cleare
+Project.create!
+Project.create
+Project.create!(:name => "Sublime Text 2")
+b = {:status => "I just ate some deliciouse brains",}
+b = {:status => "I just ate some delicious brains", :zambie => "Jim"}
+b[:status]
+b[:id]
+b[:name]
+b[:zambie]
+b.zambie
+puts.object_id
+puts.class
