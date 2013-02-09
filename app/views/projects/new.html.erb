@@ -1,15 +1,3 @@
-<h2>New Project</h2>
 
-<%= form_for(@project) do |f| %> 
-  <p>
-  	<%= f.error_messages %>
-	<%= f.label :name %> <br/>
-	<%= f.text_field :name %>
-  </p>
+<%= render "form" %>
 
-  <p>
-  	<%= f.label :description %> <br/>
-    <%= f.text_field :description %>
-    <%= f.submit %>
- <% end %>
-</p>
