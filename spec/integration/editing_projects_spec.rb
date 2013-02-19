@@ -2,6 +2,7 @@ require 'spec_helper'
 
 feature "Editing Projects" do 
   before do
+    sign_in_as!(Factory(:admin_user))
     Factory(:project, :name => "Sublime Text 2")
     visit '/'
     click_link "Sublime Text 2"
