@@ -2,41 +2,35 @@
 <html>
 <head>
   <title>
-  	<% if content_for?(:title) %>
-  	  <%= yield(:title) %>
-  	<% else %>
-  	   Ticketee
+    <% if content_for?(:title) %>
+      <%= yield(:title)%>
+    <% else %>
+      Ticketee
     <% end %>
   </title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+</head>
+<body>
 
- </head>
- <body>
-
-   <div id="nav">
-     <%= link_to "Sign up", new_user_registration_path %>
-   </div>
-
-   <%= link_to "Sign up", new_user_registration_path %>
-   <% if user_signed_in? %>
-     Signed in as <%= current_user.email %>
-   <% else %>
-   <%= link_to "Sign up", new_user_registration_path %>
-   <% end %>
-
-   <%= link_to "Sign in", new_user_session_path %>
-
-   <% flash.each do |key, value| %>
-
-   <div class='flash' id='<%= key %>'>
+<% flash.each do |key,value|%>
+  <div class='flash' id='<%= key %>'>
     <%= value %>
-   </div>
-   <% end %>
+  </div>
+<% end %>
+<nav>
+<% if user_signed_in? %>
+  Signed in as <%= current_user.email %>
+  <% admins_only do %>
+    <%= link_to "Admin", admin_root_path %>
+  <% end %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path %>
+  <%= link_to "Sign in", new_user_session_path %>
+<% end %>
+</nav>
+<%= yield %>
 
-   <%= yield %>
-
-   <%= debug(params) if Rails.env.development? %>
-  </body>
+</body>
 </html>
