@@ -21,10 +21,13 @@ gem 'jquery-rails', '2.0.2'
 
 group :test do
   gem 'capybara', '1.1.2'
-  gem 'devise', '2.1.0.rc'
-  gem 'cancan', '1.6.7'
+  gem 'factory_girl', '2.6.4'
   gem 'email_spec', '1.2.1'
 end
+
+  gem 'devise', '2.1.0.rc'
+  gem 'cancan', '1.6.7'
+  gem 'paperclip', '2.7.0'
 
 group :production do
   gem 'pg', '0.12.2'
