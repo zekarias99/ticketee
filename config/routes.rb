@@ -1,7 +1,7 @@
 Ticketee::Application.routes.draw do
 
   devise_for :users, :controllers => { :registrations => "registrations" }
-  
+
   get '/awaiting_confirmation',
     :to => "users#confirmation",
     :as => 'confirm_user'
@@ -64,6 +64,8 @@ Ticketee::Application.routes.draw do
   resources :projects do
     resources :tickets
   end
+
+  resources :files
 
   namespace :admin do
     root :to => "base#index"
